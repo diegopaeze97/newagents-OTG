@@ -53,6 +53,7 @@ h2{
   border-radius: var(--border-btn);
   font-family: var(--site-title-font);
   text-transform: uppercase;
+  transition: background-color 1.0s ease;
 }
 
 .otg-button-111:hover {
@@ -214,6 +215,28 @@ p {
   align-items: center;
   width: 100%;
   height: calc(100vh - 140px);
+  border-image: fill 0 linear-gradient(#0001, #000);
+  overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto asegura que el video se escale correctamente para llenar el contenedor */
+  z-index: -1;
+}
+
+.sec1-cont {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-terciario);
+  font-family: var(--site-title-font);
 }
 
 .sec1-cont {
@@ -594,12 +617,12 @@ p {
 }
 
 .container-fluid {
-  background-color: rgba(0,0,0,0.10);
+  background-color: var(--color-secundario);
 }
 
 .card {
   background-color: transparent;
-  color: var(--color-secundario);
+  color: var(--color-terciario);
   border: none;
   margin: 0;
 }
@@ -625,7 +648,7 @@ p {
 }
 .btn-theme {
  background: var(--color-secundario);
- color: #212121;
+ color: var(--color-terciario);
 }
 
 .c-container {
@@ -636,7 +659,7 @@ p {
 }
 
 .btn-outline-white {
-  color: #cdcdcd;
+  color: var(--color-terciario);
   background-color: rgba(255, 255, 255, 0.1);
   background-image: none;
   border-width: 2px;
@@ -659,7 +682,7 @@ p {
 }
 .btn-outline-white:hover {
   background-color: var(--color-gris);
-  color: var(--color-secundario);
+  color: var(--color-terciario);
 }
 /* common css up */
 
@@ -681,7 +704,7 @@ p {
  font-size: 14px;
  letter-spacing: 0.04em;
  text-align: right;
- color: #cdcdcd;
+ color: var(--color-terciario);
  opacity: 0.65;
 }
 
@@ -693,7 +716,7 @@ p {
 .hero-text {
  font-size: 30px;
  letter-spacing: 0.02em;
- color: #cdcdcd;
+ color: var(--color-terciario);
 }
 
 .gallery-thumbs {
@@ -778,7 +801,7 @@ p {
 .testimonial-section .user-saying {
   background: var(--color-secundario);
   width: 60%;
-  color: var(--color-secundario);
+  color: var(--color-terciario);
   height: 100%;
 }
 
@@ -809,7 +832,7 @@ p {
   width: 38px;
   display: block;
   margin-bottom: 20px;
-  color: #cdcdcd;
+  color: var(--color-terciario);
 }
 
 .section-0003 {
@@ -857,7 +880,7 @@ p {
     font-size: 12px;
     letter-spacing: 0.04em;
     text-align: right;
-    color: #cdcdcd;
+    color: var(--color-terciario);
     opacity: 0.65;
    }
   .testimonial .name {
@@ -916,7 +939,7 @@ p {
     font-size: 10px;
     letter-spacing: 0.04em;
     text-align: right;
-    color: #cdcdcd;
+    color: var(--color-terciario);
     opacity: 0.65;
    }
   .testimonial .name {
@@ -1349,6 +1372,7 @@ p {
   font-size: 6vh;
   text-align: center;
   color: var(--color-secundario);
+  padding: 1vw 0;
 }
 
 .footer-profile-div-0001 ul{
@@ -1376,7 +1400,7 @@ p {
 
 .otglogo-footer {
   width: 40%;
-  padding-bottom: 2vw;
+  padding: 2vw 0;
 }
 
 .article-footer-0002 {

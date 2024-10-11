@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="./static/imgs/styles_corousel.css" rel="stylesheet" type="text/css" />
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+    <!-- Calendly link widget end -->
     <link rel="stylesheet" href="./static/imgs/styles_index.css"> <!-- carrusel de testimonios EDIT -->
 </head>
 
@@ -18,7 +23,7 @@
     <main>
         <nav class="nav-1111 navbar">
             <div class="nav-1111-left">
-                <img src="./static/imgs/Logo-blanco-OTG.png" alt="OTG LOGO">
+                <img src="./static/imgs/logonuevootg-1.png" alt="OTG LOGO">
             </div>
             <div class="nav-1111-right">
                 <a href="#home">Inicio</a>
@@ -29,6 +34,11 @@
             </div>
         </nav>
         <section class="sec1">
+          <video autoplay muted loop id="background-video">
+            <source src="./static/imgs/6345016-hd_1920_1080_30fps.mp4" type="video/mp4">
+            <!-- Puedes agregar otras fuentes de video para mayor compatibilidad -->
+            Your browser does not support the video tag.
+          </video>
           <div class="sec1-cont">
             <div class="top-header-title">
               <p class="tit-1111">Somos el</p>
@@ -48,7 +58,7 @@
               respaldo para que tomes control de tu carrera, desde <br> tus primeros pasos hasta liderar tu propio equipo.
             </div>
             <div class="bottom-header-btns">
-              <button class="otg-button-111">Agenda una Llamada</button>
+              <button class="otg-button-111" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/oscar-otg/abundancia/30min'});return false;">Agenda una Llamada</button>
               <button class="otg-button-111">Suscríbete para más Información</button>
             </div>
           </div>
@@ -384,7 +394,7 @@
             </p>
           </div>
           <div class="bottom-header-btns">
-            <button class="otg-button-111">Agenda una Llamada</button>
+            <button class="otg-button-111" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/oscar-otg/abundancia/30min'});return false;">Agenda una Llamada</button>
             <button class="otg-button-111">Suscríbete para más Información</button>
           </div>
         </div>
@@ -403,9 +413,6 @@
                         Autor: Superventas Inteligentes <br>
                     </p>
                     <a href="https://www.amazon.com/-/es/OSCAR-TERAN-ebook/dp/B0D675G1ZF/ref=sr_1_1?crid=3MR7ARF4BQY3L&dib=eyJ2IjoiMSJ9.IqCjBJnaS4mmUL9h4yTEIC-X2oNZMUEsfs-5-wmL2ZjBjFJApZaMFJciSox-fsT30OPfYIqTDcYlOyQbSjDxa8x2vHRp0Pl_CkBRwfN31QbD3iILOHI4IOv8apy2c-WvsaGQz8ZGhok7DpAAYLWCS3j6R5195PnhJRu_0rfwgfLg1ivMcZ1mmyjQXp9_6Icj1fu9tlX3K7Rk9u9eWZl-GgY34lg2eYLpf4u7OBrFCEw.-bETxLigQkgb84Y1dM3hFZG_EOrgmL1nAwwLjsedD8E&dib_tag=se&keywords=superventas+inteligentes&qid=1726773944&sprefix=superventas+inte%2Caps%2C854&sr=8-1"><i class="fa-brands fa-amazon"></i></a>
-                </div>
-                <div class="bottom-header-btns">
-                    <button class="otg-button-111" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/oscar-otg/abundancia/30min'});return false;">Asegura tu cupo HOY! No te quedes por fuera</button>
                 </div>
                 <img class="otglogo-footer" src="./static/imgs/logonuevootg-1.png" alt="OTG LOGO">
                 <ul>
@@ -427,7 +434,7 @@
         <p class="mobile"> © 2024 All Rights Reserved</p>
       </article>
     </footer>
-    <button class="otg-button-112 permanent-btn-0001">Book a call with us NOW</button>
+    <button class="otg-button-112 permanent-btn-0001" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/oscar-otg/abundancia/30min'});return false;">Book a call with us NOW</button>
     <script
     src="https://code.jquery.com/jquery-3.7.1.js"
     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
