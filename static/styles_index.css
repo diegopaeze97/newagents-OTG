@@ -23,7 +23,6 @@ body {
     color: var(--color-secundario);
   }
 
-
 p, span, div, a {
   font-family: var(--site-paragraph-font);
 }
@@ -64,6 +63,17 @@ h2{
   border: 1px solid var(--color-secundario);
   border-radius: var(--border-btn);
   cursor: pointer;
+}
+
+.intersec {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inflow-btn {
+  margin: 2rem auto !important;
 }
 
 .otg-button-112 {
@@ -1064,7 +1074,7 @@ p {
   position: relative;
   z-index: 10;
   margin: 0 auto;
-  padding: 10rem 0rem;
+  padding: 5rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -1261,6 +1271,17 @@ p {
     font-size: 3vh;
     padding: 0 60px;
   }
+}
+
+.sec10 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec10 img{
+  width: 40%;
 }
 
 /* sec 8 q & a*/
