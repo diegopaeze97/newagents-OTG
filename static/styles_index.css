@@ -57,7 +57,6 @@ h2{
 }
 
 .otg-button-111:hover {
-  height: 60px;
   background-color: var(--color-terciario);
   min-width: 250px;
   color: var(--color-secundario);
@@ -75,6 +74,9 @@ h2{
 
 .inflow-btn {
   margin: 2rem auto !important;
+  font-size: 2rem;
+  height: auto;
+  padding: 15px 50px;
 }
 
 .otg-button-112 {
@@ -1093,14 +1095,15 @@ p {
 }
 
 .div-0005-2 {
+  width: 100%;
+  max-width: 1500px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  justify-content: center;
-  align-items: center;
 }
 
 .container-0005-2 {
+  margin-left: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1133,7 +1136,7 @@ p {
   width: 45%;
   text-align: left;
   font-size: 1.2rem;
-  font-family: var(--site-title-font);
+  font-family: var(--site-paragraph-font);
 }
 
 .container-p-0005-2 img{
@@ -1150,6 +1153,8 @@ p {
 /* section5 new */
 
 .container-0005-2-rev {
+  margin-right: 0;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -1183,7 +1188,7 @@ p {
   width: 45%;
   text-align: left;
   font-size: 1.2rem;
-  font-family: var(--site-title-font);
+  font-family: var(--site-paragraph-font);
 }
 
 .container-p-0005-2-rev img{
@@ -1389,7 +1394,7 @@ p {
 }
 
 .funcionamiento-cont p{
-  font-size: 2vh;
+  font-size: 1.8rem;
   text-align: center;
 }
 
